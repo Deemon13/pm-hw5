@@ -17,24 +17,24 @@ We will use Parcel for the local depelopment. Follow [the link](https://parceljs
 - `styles/app.css` is your main CSS file. All styles should be put into this file
 - `index.html` includes basic markup you need for developing the app. Normally you don't need to change the file
 
-## Завдання
-Створити рендерер який
-- на вході отримує масив з даними для компонентів
-- обробляє його
-- на виході видає білдер контент сторінки
+## Задание
+Создать рендерер
+на входе получает массив с данными для компонентов
+обрабатывает его
+на выходе выдает билдер контент страницы
 
-## Вимоги
-- HTML/CSS: мінімальні, але достатні для комфортного перегляду результату
-- JS: програма побудована на класах, використано прототипне наслідування, функціонал рознесено по модулях  
+## Требования
+HTML/CSS: минимальные, но достаточные для комфортного просмотра результата
+JS: программа построена на классах, использовано прототипное подражание, функционал разнесен по модулям  
 
 ### Input sources
 <details>
     <summary>db.json</summary>
 
-- `COMPONENTS_LIST` масив з об’єктами Components
+- `COMPONENTS_LIST` массив с объектами Components
 - Component item:
   - заголовок
-  - дані для компоненту
+  - данные для компонента
 - Types of components
   - TITLE
   - RICH_TEXT
@@ -52,12 +52,12 @@ We will use Parcel for the local depelopment. Follow [the link](https://parceljs
   <summary>Орієнтовна структура класів</summary>
   <img src="./assets/classes.png" style="width: 100%; height: auto">
 
-- `Renderer` - entry point, приймає на вхід масив
-- `Component` резолвить конкретний тип компоненту
-- `[COMPONENT_TYPE]` імплементація рендерінгу конкретного компоненту
-- `Container` - враппер з кнопками DELETE і SORT та заголовком
+- `Renderer` - entry point, принимает на вход массив
+- `Component` резолвет конкретный тип компонента
+- `[COMPONENT_TYPE]` имплементация рендеринга конкретного компонента
+- `Container` - враппер с кнопками DELETE и SORT и заголовком
 
-- Поля для компонентів
+- Поля для компонентов
   - TITLE
     - text: input, type=text
   - RICH_TEXT
